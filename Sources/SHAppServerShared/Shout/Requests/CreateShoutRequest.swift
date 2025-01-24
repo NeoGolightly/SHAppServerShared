@@ -53,8 +53,6 @@ extension CreateShoutRequest {
     public let city: String
     public let applePlaceID: String?
     public let googlePlaceID: String?
-    public let createdAt: Date?
-    public let updatedAt: Date?
     
     public init(name: String,
                 street: String,
@@ -62,9 +60,7 @@ extension CreateShoutRequest {
                 zipCode: String,
                 city: String,
                 applePlaceID: String?,
-                googlePlaceID: String?,
-                createdAt: Date?,
-                updatedAt: Date?)
+                googlePlaceID: String?)
     {
       self.name = name
       self.street = street
@@ -73,8 +69,6 @@ extension CreateShoutRequest {
       self.city = city
       self.applePlaceID = applePlaceID
       self.googlePlaceID = googlePlaceID
-      self.createdAt = createdAt
-      self.updatedAt = updatedAt
     }
   }
 }
