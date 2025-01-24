@@ -17,10 +17,23 @@ public struct ShoutDTO: Codable, Sendable {
   public let type: ShoutType
   public let coordinate: CoordinateDTO
   public let createdBy: UserPublicDTO
+  public let place: PlaceDTO?
   public let createdAt: Date
   public let updatedAt: Date
   
-  public init(id: UUID, title: String, text: String, startDate: Date, endDate: Date, category: ShoutCategory, type: ShoutType, coordinate: CoordinateDTO, createdBy: UserPublicDTO, createdAt: Date, updatedAt: Date) {
+  public init(id: UUID,
+              title: String,
+              text: String,
+              startDate: Date,
+              endDate: Date,
+              category: ShoutCategory,
+              type: ShoutType,
+              coordinate: CoordinateDTO,
+              createdBy: UserPublicDTO,
+              place: PlaceDTO?,
+              createdAt: Date,
+              updatedAt: Date)
+  {
     self.id = id
     self.title = title
     self.text = text
@@ -30,6 +43,7 @@ public struct ShoutDTO: Codable, Sendable {
     self.type = type
     self.coordinate = coordinate
     self.createdBy = createdBy
+    self.place = place
     self.createdAt = createdAt
     self.updatedAt = updatedAt
   }
