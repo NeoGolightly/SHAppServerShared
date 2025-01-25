@@ -14,6 +14,8 @@ public struct PlaceDTO: Codable, Sendable {
   public let houseNumber: String
   public let zipCode: String
   public let city: String
+  public let telephone: String?
+  public let url: String?
   public let applePlaceID: String?
   public let googlePlaceID: String?
   public let createdAt: Date?
@@ -25,6 +27,8 @@ public struct PlaceDTO: Codable, Sendable {
               houseNumber: String,
               zipCode: String,
               city: String,
+              telephone: String?,
+              url: String?,
               applePlaceID: String?,
               googlePlaceID: String?,
               createdAt: Date?,
@@ -37,6 +41,8 @@ public struct PlaceDTO: Codable, Sendable {
     self.zipCode = zipCode
     self.city = city
     self.applePlaceID = applePlaceID
+    self.telephone = telephone
+    self.url = url
     self.googlePlaceID = googlePlaceID
     self.createdAt = createdAt
     self.updatedAt = updatedAt

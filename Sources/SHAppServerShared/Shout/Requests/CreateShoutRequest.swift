@@ -51,6 +51,8 @@ extension CreateShoutRequest {
     public let houseNumber: String
     public let zipCode: String
     public let city: String
+    public let telephone: String?
+    public let url: String?
     public let applePlaceID: String?
     public let googlePlaceID: String?
     
@@ -59,6 +61,8 @@ extension CreateShoutRequest {
                 houseNumber: String,
                 zipCode: String,
                 city: String,
+                telephone: String?,
+                url: String?,
                 applePlaceID: String?,
                 googlePlaceID: String?)
     {
@@ -67,6 +71,8 @@ extension CreateShoutRequest {
       self.houseNumber = houseNumber
       self.zipCode = zipCode
       self.city = city
+      self.telephone = telephone
+      self.url = url
       self.applePlaceID = applePlaceID
       self.googlePlaceID = googlePlaceID
     }
