@@ -18,6 +18,7 @@ public struct ShoutDTO: Codable, Sendable {
   public let coordinate: CoordinateDTO
   public let createdBy: UserPublicDTO
   public let place: PlaceDTO?
+  public let attendees: [UserPublicDTO]
   public let createdAt: Date
   public let updatedAt: Date
   
@@ -31,6 +32,7 @@ public struct ShoutDTO: Codable, Sendable {
               coordinate: CoordinateDTO,
               createdBy: UserPublicDTO,
               place: PlaceDTO?,
+              attendees: [UserPublicDTO],
               createdAt: Date,
               updatedAt: Date)
   {
@@ -44,6 +46,7 @@ public struct ShoutDTO: Codable, Sendable {
     self.coordinate = coordinate
     self.createdBy = createdBy
     self.place = place
+    self.attendees = attendees
     self.createdAt = createdAt
     self.updatedAt = updatedAt
   }
